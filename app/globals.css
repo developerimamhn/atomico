@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face{
+  font-family: "Aeonik Pro TRIAL";
+  src: url(./Aeonik.otf);
+}
+@font-face{
+  font-family: "Monument Grotesk";
+  src: url(./Monument.ttf);
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -9,7 +18,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #FFFFFF;
     --foreground: #ededed;
   }
 }
@@ -18,4 +27,119 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+.backgroundimage{
+  background-image: url("./component/image/image2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Link-manu-bar{
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.partners{
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.billionParagraph{
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.atomico-ccss{
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Monument Grotesk";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.buttonbd{
+  color: #012B38;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 24px 0px 0px 0px;
+  background: #FFF;
+}
+
+
+.sebstiion{
+  color: #012B38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 64.8px */
+}
+
+.kalarna{
+  color: #012B38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
+}
+
+.readmore{
+  color: #012B38;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.arrorback{
+  fill: #F2F4F4;
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  background-color: #F2F4F4;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.arrorback:active{
+  opacity: 50%;
+}
+
+.pleacholderss::placeholder{
+  color: rgba(255, 255, 255, 0.70);
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "Aeonik Pro TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 32px */
 }
