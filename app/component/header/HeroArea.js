@@ -1,16 +1,43 @@
-import React from 'react';
+"use client"
+
+import react, { useEffect } from 'react';
+
+
 
 const HeroArea = () => {
+
+
+    useEffect(() => {
+        const handleScroll = () => {
+          const features = document.querySelectorAll('.feature');
+          const windowHeight = window.innerHeight;
+    
+          features.forEach((feature) => {
+            const featurePosition = feature.getBoundingClientRect().top;
+    
+            if (featurePosition < windowHeight - 100) {
+              feature.classList.add('visible');
+            }
+          });
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+
+
     return (
-        <div>
+        <div className=''>
             <div className='container mx-auto pt-[50px] sm:pt-[60px] md:pt-[80px] lg:pt-[110px] xl:pt-[130px] 2xl:pt-[167px]'>
                 <div className="flex items-center sm:items-end  flex-col">
-                    <div className='text-center sm:text-left'>
+                    <div className='text-center sm:text-left fatchanimaction' >
                         <h1 className='partners text-[35px] sm:text-[40px] md:text-[45px] lg:text-[50px] xl:text-[55px] 2xl:text-[62px]'>Partners to <br/> Gamechangers.</h1>
                         <p className='billionParagraph text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[18px] text-left mt-[32px]'>$1.24 billion for Europe’s most ambitious founders</p>
                     </div>
                 </div>
-                <h1 className='atomico-ccss text-[70px] sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] pt-[200px] sm:pt-[250px] md:pt-[280px] lg:pt-[320px] xl:pt-[360px] 2xl:pt-[445px] sm:px-0 px-[24px]'>ATOMICO</h1>
+                <h1 className='atomico-ccss text-[70px] sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] pt-[180px] sm:pt-[200px] md:pt-[250px] lg:pt-[50px] xl:pt-[110px] 2xl:pt-[210px] sm:px-0 px-[24px] text-center sm:text-left fatchanimactionright'>ATOMICO</h1>
                 
             </div>
             <div className='flex justify-end'>

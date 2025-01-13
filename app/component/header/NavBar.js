@@ -34,7 +34,7 @@ const NavBar = () => {
         };
     }, []);
     return (
-        <div className=''>
+        <div className='fatchanimactionnavaction'>
             <header className=' container mx-auto flex justify-between items-center py-[20px] sm:py-[35px] relative rounded-[80px] px-[24px]'>
                 <div className='sm:hidden relative top-[-11px]'>
                     
