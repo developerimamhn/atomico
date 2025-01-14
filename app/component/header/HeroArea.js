@@ -37,7 +37,7 @@ const HeroArea = () => {
                         <p className='billionParagraph text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[18px] text-left mt-[16px]'>$1.24 billion for Europe’s most ambitious founders</p>
                     </div>
                 </div>
-                <h1 className='atomico-ccss text-[70px] sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] pt-[180px] sm:pt-[200px] md:pt-[250px] lg:pt-[50px] xl:pt-[110px] 2xl:pt-[330px] sm:px-0 px-[24px] text-center sm:text-left fatchanimactionright'>ATOMICO</h1>
+                <h1 className='atomico-ccss text-[70px] sm:text-[120px] md:text-[140px] lg:text-[160px] xl:text-[180px] 2xl:text-[200px] pt-[180px] sm:pt-[200px] md:pt-[250px] lg:pt-[50px] xl:pt-[110px] 2xl:pt-[230px] sm:px-0 px-[24px] text-center sm:text-left fatchanimactionright'>ATOMICO</h1>
                 
             </div>
             <div className='flex justify-end'>

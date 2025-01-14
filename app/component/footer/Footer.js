@@ -48,7 +48,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="w-full relative z-[1] overflow-hidden">
-                    <h1 className="ATOMICOfooterthis text-[55px] sm:text-[80px] md:text-[100px] lg:text-[140px] xl:text-[150px] 2xl:text-[170px] 3xl:text-[200px] !tracking-[8px] sm:!tracking-[34px] md:!tracking-[35px] lg:!tracking-[70px] xl:!tracking-[90px] 2xl:!tracking-[100px]">
+                    <h1 className="ATOMICOfooterthis text-[55px] sm:text-[80px] md:text-[100px] lg:text-[140px] xl:text-[150px] 2xl:text-[170px] 3xl:text-[250px] !tracking-[8px] sm:!tracking-[34px] md:!tracking-[35px] lg:!tracking-[70px] xl:!tracking-[90px] 2xl:!tracking-[100px] 3xl:mb-[80px]">
                     <TypeAnimation
                     sequence={[
                         1500,
