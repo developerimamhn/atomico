@@ -250,3 +250,39 @@ body {
     opacity: 1;
   }
 }
+
+
+/* All slides (default rotation for inactive slides) */
+.swiper-slide .slider-image {
+  transform: translate(45%,0%) skew(-8deg); /* Rotate inactive slides */
+  transition: transform 0.3s ease-in-out;
+  width: 70%;
+  height: 100%;
+  padding: 150px
+}
+
+/* Active slide (reset rotation) */
+.swiper-slide-active .slider-image {
+  transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+  transition: transform 0.3s ease-in-out;
+  width: 60%;
+  padding: 50px
+}
+
+
+.ATOMICOfooterthis{
+font-family: "Monument Grotesk";
+font-style: normal;
+font-weight: 700;
+line-height: 83%;
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.index-module_type__E-SaG::after {
+  content: none !important; /* Removes the content */
+  display: none !important; /* Ensures the pseudo-element is not rendered */
+}

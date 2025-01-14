@@ -73,6 +73,7 @@ const Page5 = () => {
                           }}
                         thumbs={{ swiper: thumbsSwiper }}
                         modules={[FreeMode, Navigation, Thumbs]}
+                        loop={true}
                         className="mySwiper2"
                     >
                         {[image1, image2, image3, image4].map((img, index) => (
@@ -92,6 +93,7 @@ const Page5 = () => {
                     slidesPerView={3}
                     direction='vertical'
                     freeMode={true}
+                    loop={true}
                     watchSlidesProgress={true}
                     modules={[FreeMode, Navigation, Thumbs]}
                     className="mySwiper h-[150px] sm:h-[180px] md:h-[205px] lg:h-[292px] xl:h-[382px] 2xl:h-[445px] 3xl:h-[464px] !w-[70px] xl:!w-[90px] 2xl:!w-[132px] 3xl:!w-[175px] "

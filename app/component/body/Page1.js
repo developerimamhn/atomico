@@ -81,7 +81,7 @@ const Page1 = () => {
                     <div className='px-[40px] sm:px-[50px] md:px-[60px] lg:px-[70px] xl:px-[80px] 2xl:px-[90px] py-[50px] sm:py-[60px] md:py-[70px] lg:py-[80px] xl:py-[90px] 2xl:py-[99px] feature'>
                         <h2 className=" sebstiion text-[25px] sm:text-[30px] md:text-[35px] lg:text-[40px] xl:text-[50px] 2xl:text-[54px]">Sebastian siemiatkowski, niklas adalberth and victor jacobsson.</h2>
                         <p className='kalarna text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] pt-[24px] lg:pt-[32px]'>Klarna makes online shopping simple by offering direct payments, pay after delivery options and installment plans in a smooth one-click purchase experience. smoooth.</p>
-                        <button className='flex justify-center items-center gap-[8px] sm:gap-[12px] readmore text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-[20px] md:mt-[30px] xl:mt-[41px]'>Read Story <Image className="" src={image12} alt='' /></button>
+                        <button className='flex justify-center items-center gap-[8px] sm:gap-[12px] readmore text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-[20px] md:mt-[30px] xl:mt-[41px] group'>Read Story <Image className="ml-[-50px] group-hover:ml-[0px] opacity-0 group-hover:opacity-100 duration-300 mt-[2px]" src={image12} alt='' /></button>
                     </div>
                     <div className='h-full md:relative md:top-0 feature'><Image className='w-full h-full lg:h-[600px] object-contain lg:absolute lg:top-0 feature' src={image13} alt=''/></div>
                 </div>

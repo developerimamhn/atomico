@@ -1,11 +1,14 @@
 "use client"
 
-import React, {useEffect} from 'react';
+import React, {useEffect,useState} from 'react';
 import image from '../image/image1.png';
 import image12 from '../image/image12.svg';
 import image34 from '../image/image34.png';
 import Image from 'next/image';
 import Link from 'next/link';
+const { TypeAnimation } = require("react-type-animation");
+
+
 const Footer = () => {
 
     useEffect(() => {
@@ -27,12 +30,12 @@ const Footer = () => {
         // Cleanup the event listener on component unmount
         return () => window.removeEventListener('scroll', handleScroll);
       }, []);
-
+      const [typingStatus, setTypingStatus] = useState('Initializing');
     return (
         <div className='bg-[#05181F] relative'>
             <Image className='absolute bottom-0 left-0 w-full z-[2]' src={image34} alt=''/>
-            <div className='container mx-auto relative z-10 sm:px-[0] px-[24px]'>
-                <div className='flex items-center flex-col sm:flex-row py-[70px] sm:py-[100px] md:py-[130px] lg:py-[150px] xl:py-[170px] 2xl:py-[200px]'>
+            <div className=' mx-auto relative sm:px-[50px] px-[24px]'>
+                <div className='flex items-center flex-col sm:flex-row py-[70px] sm:py-[100px] md:py-[130px] lg:py-[150px] xl:py-[170px] 2xl:py-[200px] relative z-10 '>
                     <div className='flex-1 mb-[20px] sm:mb-[0] feature'>
                         <h2 className=" sebstiion text-[20px] sm:text-[30px] md:text-[35px] lg:text-[42px] xl:text-[53px] 2xl:text-[62px] !text-[#FFF] text-center sm:text-left">Would you like to stay up-to-date?</h2>
                         <p className='kalarna text-[11px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px] pt-[24px] lg:pt-[32px] !text-[#FFF] opacity-70 text-center sm:text-left'>You will receive occasional emails from us about news and portfolio updates. You <br className='hidden md:block'/> always have the choice to unsubscribe within every email you receive.</p>
@@ -44,7 +47,36 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between items-center py-[20px] sm:py-[30px] md:py-[40px] lg:py-[60px] xl:py-[80px] 2xl:py-[100px] mt-[40px] md:mt-[50px] lg:mt-[70px] xl:mt-[90px] 2xl:mt-[114px] flex-col md:flex-row gap-5 sm:gap-0">
+                <div className="w-full relative z-[1] overflow-hidden">
+                    <h1 className="ATOMICOfooterthis text-[55px] sm:text-[80px] md:text-[100px] lg:text-[140px] xl:text-[150px] 2xl:text-[170px] 3xl:text-[200px] !tracking-[8px] sm:!tracking-[34px] md:!tracking-[35px] lg:!tracking-[70px] xl:!tracking-[90px] 2xl:!tracking-[100px]">
+                    <TypeAnimation
+                    sequence={[
+                        1500,
+                        () => {
+                        setTypingStatus('Typing...');
+                        },
+                        'ATOMICO',
+                        () => {
+                        setTypingStatus('Done Typing');
+                        },
+                        1000,
+                        () => {
+                        setTypingStatus('Deleting...');
+                        },
+                        'ATOMIC', 
+                        () => {
+                        setTypingStatus('Done Deleting');
+                        },
+                        '', 
+                    ]}
+                    speed={50}
+                    cursor={false}
+                    repeat={Infinity}
+                    />;
+
+                    </h1>
+                </div>
+                <div className="flex justify-between items-center py-[20px] sm:py-[30px] md:py-[40px] lg:py-[60px] xl:py-[80px] 2xl:py-[100px] mt-[40px] md:mt-[50px] lg:mt-[70px] xl:mt-[90px] 2xl:mt-[70px] flex-col md:flex-row gap-5 sm:gap-0 relative z-10 ">
                     <h1 className='Froggo-Logo w-[75px] sm:w-[80px] md:w-[90px] lg:w-[115px] xl:w-[135px] 2xl:w-[158px]'><Image src={image} alt=''/></h1>
                     <div className='flex justify-center items-center gap-[12px] md:gap-[28px] lg:gap-[30px] xl:gap-[35px] 2xl:gap-[40px]'>
                         <Link className={`Link-manu-bar text-[8px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[18px]`} href="#about">Our approach</Link>

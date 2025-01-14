@@ -37,7 +37,7 @@ const Page2 = () => {
 
     return (
         <div className='relative overflow-hidden'>
-            <div className='container mx-auto'>
+            <div className='pl-[50px] mx-auto'>
                 <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center flex-col sm:flex-row my-[70px] sm:my-[100px] md:my-[120px] lg:my-[140px] xl:my-[160px] 2xl:my-[170px]'>
                     <div className='flex-1 sm:pr-[50px] md:pr-[70px] lg:pr-[100px] xl:pr-[130px] 2xl:pr-[160px] px-[24px] sm:px-[0] feature'>
                     <h2 className=" sebstiion text-[25px] sm:text-[30px] md:text-[35px] lg:text-[42px] xl:text-[53px] 2xl:text-[62px]">Capital is a commodity. Experience is not.</h2>
@@ -61,19 +61,20 @@ const Page2 = () => {
                         <div className='flex justify-start items-center'>
                         <Swiper
                             effect="cards"
+                            loop={true}
                             grabCursor={true}
                             modules={[EffectCards, Navigation]}
                             navigation={{
                                 nextEl: ".button-next-slide",
                                 prevEl: ".button-prev-slide"
                             }}
-                            className="mySwiper w-[800px]"
+                            className="custom-swiper w-full"
                         >
-                        <SwiperSlide>
-                        <Image className='relative z-[1] w-[60%] sm:w-full h-full' src={image15} alt=''/>
+                        <SwiperSlide className="custom-slide">
+                        <Image className='relative z-[1] slider-image' src={image15} alt=''/>
                         </SwiperSlide>
-                        <SwiperSlide>
-                        <Image className='relative z-[1] w-[60%] sm:w-full h-full' src={image15} alt=''/>
+                        <SwiperSlide className="custom-slide">
+                        <Image className='relative z-[1] slider-image' src={image16} alt=''/>
                         </SwiperSlide>
                         </Swiper>
                         </div>
