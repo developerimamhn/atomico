@@ -252,23 +252,150 @@ body {
 }
 
 
-/* All slides (default rotation for inactive slides) */
+
+/* 
+
 .swiper-slide .slider-image {
-  transform: translate(45%,0%) skew(-8deg); /* Rotate inactive slides */
+  transform: translate(50%,0%) skew(-8deg); 
   transition: transform 0.3s ease-in-out;
   width: 70%;
   height: 100%;
   padding: 150px
 }
 
-/* Active slide (reset rotation) */
 .swiper-slide-active .slider-image {
-  transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+  transform: translateX(0px) skew(8deg); 
   transition: transform 0.3s ease-in-out;
   width: 60%;
   padding: 50px
-}
+} */
 
+
+@layer components {
+  @layer components {
+    .swiper-slide .slider-image {
+      transform: translate(60%,10%) skew(-8deg); /* Rotate inactive slides */
+      transition: transform 0.3s ease-in-out;
+      width: 75%;
+      height: 100%;
+      padding: 80px
+    }
+    
+    /* Active slide (reset rotation) */
+    .swiper-slide-active .slider-image {
+      transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+      transition: transform 0.3s ease-in-out;
+      width: 75%;
+      padding: 50px
+    }
+  
+    @screen sm {
+      .swiper-slide .slider-image {
+        transform: translate(50%,15%) skew(-8deg); /* Rotate inactive slides */
+        transition: transform 0.3s ease-in-out;
+        width: 60%;
+        height: 100%;
+        padding: 50px
+      }
+      
+      /* Active slide (reset rotation) */
+      .swiper-slide-active .slider-image {
+        transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+        transition: transform 0.3s ease-in-out;
+        width: 70%;
+        padding: 50px
+      }
+    }
+  
+    @screen md {
+      .swiper-slide .slider-image {
+        transform: translate(50%,0%) skew(-8deg); /* Rotate inactive slides */
+        transition: transform 0.3s ease-in-out;
+        width: 80%;
+        height: 100%;
+        padding: 50px
+      }
+      
+      /* Active slide (reset rotation) */
+      .swiper-slide-active .slider-image {
+        transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+        transition: transform 0.3s ease-in-out;
+        width: 90%;
+        padding: 50px
+      }
+    }
+  
+    @screen lg {
+      .swiper-slide .slider-image {
+        transform: translate(50%,30%) skew(-8deg); /* Rotate inactive slides */
+        transition: transform 0.3s ease-in-out;
+        width: 70%;
+        height: 100%;
+        padding: 80px
+      }
+      
+      /* Active slide (reset rotation) */
+      .swiper-slide-active .slider-image {
+        transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+        transition: transform 0.3s ease-in-out;
+        width: 80%;
+        padding: 50px
+      }
+    }
+  
+    @screen xl {
+      .swiper-slide .slider-image {
+        transform: translate(50%,0%) skew(-8deg); /* Rotate inactive slides */
+        transition: transform 0.3s ease-in-out;
+        width: 80%;
+        height: 100%;
+        padding: 150px
+      }
+      
+      /* Active slide (reset rotation) */
+      .swiper-slide-active .slider-image {
+        transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+        transition: transform 0.3s ease-in-out;
+        width: 70%;
+        padding: 50px
+      }
+    }
+  
+    @screen 2xl {
+      .swiper-slide .slider-image {
+        transform: translate(60%,0%) skew(-8deg); /* Rotate inactive slides */
+        transition: transform 0.3s ease-in-out;
+        width: 70%;
+        height: 100%;
+        padding: 150px
+      }
+      
+      /* Active slide (reset rotation) */
+      .swiper-slide-active .slider-image {
+        transform: translateX(0px) skew(8deg); /* No rotation for the active slide */
+        transition: transform 0.3s ease-in-out;
+        width: 60%;
+        padding: 50px
+      }
+    }
+  }
+  @screen 3xl {
+    .swiper-slide .slider-image {
+      transform: translate(50%,0%) skew(-8deg); 
+      transition: transform 0.3s ease-in-out;
+      width: 70%;
+      height: 100%;
+      padding: 150px
+    }
+    
+    .swiper-slide-active .slider-image {
+      transform: translateX(0px) skew(8deg); 
+      transition: transform 0.3s ease-in-out;
+      width: 60%;
+      padding: 50px
+    } 
+  }
+}
 
 .ATOMICOfooterthis{
 font-family: "Monument Grotesk";

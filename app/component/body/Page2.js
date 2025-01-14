@@ -37,7 +37,7 @@ const Page2 = () => {
 
     return (
         <div className='relative overflow-hidden'>
-            <div className='pl-[50px] mx-auto'>
+            <div className='sm:pl-[50px] mx-auto'>
                 <div className='grid grid-cols-1 md:grid-cols-2 justify-center items-center flex-col sm:flex-row my-[70px] sm:my-[100px] md:my-[120px] lg:my-[140px] xl:my-[160px] 2xl:my-[170px]'>
                     <div className='flex-1 sm:pr-[50px] md:pr-[70px] lg:pr-[100px] xl:pr-[130px] 2xl:pr-[160px] px-[24px] sm:px-[0] feature'>
                     <h2 className=" sebstiion text-[25px] sm:text-[30px] md:text-[35px] lg:text-[42px] xl:text-[53px] 2xl:text-[62px]">Capital is a commodity. Experience is not.</h2>
