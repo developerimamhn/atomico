@@ -97,8 +97,8 @@ const Page1 = () => {
                     </div>
                     <div className='h-full md:relative md:top-0 feature'><Image className='w-full h-full lg:h-[600px] object-contain lg:absolute lg:top-0' src={image13} alt='' 
                     style={{
-                        transform: isTranslated ? 'translatex(100%)' : 'translatex(0)', // Apply translate effect on click
-                        transition: 'transform 0.3s ease-in-out', // Smooth transition for the effect
+                        transform: isTranslated ? 'translatex(100%)' : 'translatex(0)',
+                        transition: 'transform 0.3s ease-in-out',
                       }}
                     /></div>
                 </div>

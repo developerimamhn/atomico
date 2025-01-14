@@ -7,6 +7,7 @@ import image34 from '../image/image34.png';
 import Image from 'next/image';
 import Link from 'next/link';
 const { TypeAnimation } = require("react-type-animation");
+import validate from 'validate.js';
 
 
 const Footer = () => {
@@ -31,6 +32,40 @@ const Footer = () => {
         return () => window.removeEventListener('scroll', handleScroll);
       }, []);
       const [typingStatus, setTypingStatus] = useState('Initializing');
+
+
+      const [email, setEmail] = useState('');
+      const [errors, setErrors] = useState({});
+    
+      // Validation rules using Validate.js
+      const constraints = {
+        email: {
+          presence: { allowEmpty: false, message: 'is required' },
+          email: { message: 'is not valid' },
+        },
+      };
+    
+      const handleChange = (e) => {
+        setEmail(e.target.value);
+      };
+    
+      const handleSubmit = (e) => {
+        e.preventDefault();
+        const validationResult = validate({ email }, constraints);
+        
+        if (validationResult) {
+          setErrors(validationResult);
+        } else {
+          setErrors({});
+          // You can now submit the form or handle the success case
+          console.log('Form is valid, submitting...', email);
+        }
+      };
+      const handleClick = () => {
+        // Logic for Sign Up click action (optional, like form submission)
+        console.log('Sign Up button clicked');
+      };
+    
     return (
         <div className='bg-[#05181F] relative'>
             <Image className='absolute bottom-0 left-0 w-full z-[2]' src={image34} alt=''/>
@@ -42,8 +77,11 @@ const Footer = () => {
                     </div>
                     <div className='flex-1 '>
                         <div className='xl:ml-[204px] feature'>
-                            <input type="email" className='border-0  focus:outline-none w-full px-[20px] md:px-[18px] xl:px-[24px] py-[12px] md:py-[30px] xl:py-[40px] bg-[#ffffff0d] border-b-[1px] border-b-[#ffffff66] pleacholderss text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px]' placeholder="Enter your email"/>
-                            <button className='flex justify-center items-center gap-[8px] sm:gap-[12px] readmore text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-[10px] md:mt-[12px] xl:mt-[16px] w-full bg-[#fff] text-[#012B38] px-[20px] md:px-[18px] xl:px-[24px] py-[10px] md:py-[30px] xl:py-[40px]'>Sing Up<Image className="" src={image12} alt='' /></button>
+                            <form onSubmit={handleSubmit}>
+                            <input type="email" className='border-0  focus:outline-none w-full px-[20px] md:px-[18px] xl:px-[24px] py-[12px] md:py-[30px] xl:py-[40px] bg-[#ffffff0d] border-b-[1px] border-b-[#ffffff66] pleacholderss text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px]' placeholder="Enter your email" value={email} onChange={handleChange}/>
+                            {errors.email && <p className="text-red-500 text-sm">{errors.email[0]}</p>}
+                            <button className='flex justify-center items-center gap-[8px] sm:gap-[12px] readmore text-[15px] sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[24px] mt-[10px] md:mt-[12px] xl:mt-[16px] w-full bg-[#fff] text-[#012B38] px-[20px] md:px-[18px] xl:px-[24px] py-[10px] md:py-[30px] xl:py-[40px]' onClick={handleClick}>Sing Up<Image className="" src={image12} alt='' /></button>
+                            </form>
                         </div>
                     </div>
                 </div>
