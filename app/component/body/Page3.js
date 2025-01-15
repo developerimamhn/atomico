@@ -44,32 +44,32 @@ const Page3 = () => {
                     <div className="bg-[#fff] p-[24px] sm:p-[20px] md:p-[25px] lg:p-[30px] xl:p-[35px] 2xl:p-[40px] feature">
                         <Image src={image17} alt=''/>
                         <h2 className=" sebstiion text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-[#05181F] mt-[25px] sm:mt-[30px] lg:mt-[52px]">Digital Work</h2>
-                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already well under way. </p>
+                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is <br className='2xl:block hidden'/> already well under way. </p>
                     </div>
                     <div className="bg-[#fff] p-[24px] sm:p-[20px] md:p-[25px] lg:p-[30px] xl:p-[35px] 2xl:p-[40px] feature">
                         <Image src={image18} alt=''/>
                         <h2 className=" sebstiion text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-[#05181F] mt-[25px] sm:mt-[30px] lg:mt-[52px]">Enterprise Al & Automation</h2>
-                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already well under way. </p>
+                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet <br className='2xl:block hidden'/> is already well under way. </p>
                     </div>
                     <div className="bg-[#fff] p-[24px] sm:p-[20px] md:p-[25px] lg:p-[30px] xl:p-[35px] 2xl:p-[40px] feature">
                         <Image src={image19} alt=''/>
                         <h2 className=" sebstiion text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-[#05181F] mt-[25px] sm:mt-[30px] lg:mt-[52px]">Internet Infrastructure & Security</h2>
-                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already well under way. </p>
+                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is <br className='2xl:block hidden'/> already well under way. </p>
                     </div>
                     <div className="bg-[#fff] p-[24px] sm:p-[20px] md:p-[25px] lg:p-[30px] xl:p-[35px] 2xl:p-[40px] feature">
                         <Image src={image20} alt=''/>
                         <h2 className=" sebstiion text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-[#05181F] mt-[25px] sm:mt-[30px] lg:mt-[52px]">Future Finance</h2>
-                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already well under way. </p>
+                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet <br className='2xl:block hidden'/> is already well under way. </p>
                     </div>
                     <div className="bg-[#fff] p-[24px] sm:p-[20px] md:p-[25px] lg:p-[30px] xl:p-[35px] 2xl:p-[40px] feature">
                         <Image src={image21} alt=''/>
                         <h2 className=" sebstiion text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-[#05181F] mt-[25px] sm:mt-[30px] lg:mt-[52px]">Mobility</h2>
-                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already well under way. </p>
+                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already <br className='2xl:block hidden'/> well under way. </p>
                     </div>
                     <div className="bg-[#fff] p-[24px] sm:p-[20px] md:p-[25px] lg:p-[30px] xl:p-[35px] 2xl:p-[40px] feature">
                         <Image src={image22} alt=''/>
                         <h2 className=" sebstiion text-[18px] sm:text-[20px] md:text-[22px] lg:text-[24px] xl:text-[26px] 2xl:text-[28px] text-[#05181F] mt-[25px] sm:mt-[30px] lg:mt-[52px]">Industrial Automation</h2>
-                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the planet is already well under way. </p>
+                        <p className='kalarna text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px] pt-[16px] lg:pt-[16px] !text-[#05181fcc] opacity-60'>The digital transformation of every industry on the <br className='2xl:block hidden'/> planet is already well under way. </p>
                     </div>
                 </div>
             </div>

@@ -413,3 +413,8 @@ background-clip: text;
   content: none !important; /* Removes the content */
   display: none !important; /* Ensures the pseudo-element is not rendered */
 }
+
+
+.navbar-items-main {
+  z-index: 50; /* or higher */
+}
